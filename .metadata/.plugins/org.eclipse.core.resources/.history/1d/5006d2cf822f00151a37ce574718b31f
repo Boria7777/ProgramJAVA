@@ -1,0 +1,38 @@
+package com.bao;
+
+import java.util.Scanner;
+
+/**
+ * 
+ * @author Boria
+ *
+ */
+public class Time {
+	private static Scanner sc;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		shuZi();
+	}
+  public static void shuZi() {
+	  sc = new Scanner(System.in); 
+	  int index = sc.nextInt();
+//	  System.out.println(index);
+	  int c = index%100;
+	  System.out.println(c);
+	  int b = ((index-c)%10000)/100;
+	  System.out.println(b);
+	  int a = index/10000;
+	  
+  }
+  public static void buChong(int x) {
+	  if (x<10) {
+		  System.out.print("0"+x);
+		
+	}
+	  else{
+		  System.out.print(x);
+		
+	}
+	
+}
+}

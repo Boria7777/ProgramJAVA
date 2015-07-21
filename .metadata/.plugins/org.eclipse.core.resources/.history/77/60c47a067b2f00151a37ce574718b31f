@@ -1,0 +1,48 @@
+package com.bao;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+public class PalindromeNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       number();
+	}
+	
+   public static void number() {
+	   Scanner sc = new Scanner(System.in); 
+       System.out.println("请输入一个0~9999的数字"); 
+//       String number = sc.nextLine();
+//       System.out.println(number);
+       
+
+       try {
+       	int index = sc.nextInt();
+       	if (index>=10000||index<0) {
+       		System.out.println("请正确输入数字"); 
+       		number();
+        	}
+       	else{
+       		 if (index/10 >=100) {
+           	    System.out.println("是四位数");
+            	}
+       	     else if (index/10<100&&index/10>=10) {
+            	System.out.println("是三位数");
+            	}
+       	     else if (index/10<10&&index/10>=1) {
+        	    System.out.println("是二位数");
+             	}
+            else{
+        	    System.out.println("是个位数");  
+               }
+        	}
+       }
+       	  catch (InputMismatchException e) {
+   		   System.out.println("请输入正确数字");
+   		   number();
+    	   } 
+       
+   }
+}
+   	 
+  
+

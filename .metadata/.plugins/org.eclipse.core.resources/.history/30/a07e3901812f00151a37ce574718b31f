@@ -1,0 +1,25 @@
+package com.bao;
+
+import java.util.Scanner;
+
+/**
+ * 
+ * @author Boria
+ *
+ */
+public class Time {
+	private static Scanner sc;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		shuZi();
+	}
+  public static void shuZi() {
+	  sc = new Scanner(System.in); 
+	  int index = sc.nextInt();
+//	  System.out.println(index);
+	
+
+ 
+	
+  }
+}
