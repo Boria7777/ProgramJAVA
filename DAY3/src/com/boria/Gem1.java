@@ -19,20 +19,43 @@ public class Gem1 {
 			for (int j = 0; j< a.length; j++) {
 				System.out.print(a[j]+" ");
 			}
-			System.out.println();
-			System.out.println("----------------------");
-			System.out.println("以上20位最大的数:");
-			int max_number = a[0];
-			for (int k = 1; k < a.length; k++) {
-				
-				if (a[k]>max_number) {
-					max_number=a[k];
-					
-				}
+			maxMax(a);
+			minMin(a);
+		}
+		
+		public static void maxMax(int a[]) {System.out.println();
+		   System.out.println("----------------------");
+		   System.out.println("以上20位最大的数:");
+		   int max_number = a[0];
+		   for (int k = 1; k < a.length; k++) {
+			
+			if (a[k]>max_number) {
+				max_number=a[k];
 				
 			}
-			System.out.println(max_number);
+			
 		}
+		System.out.println(max_number);
+			
+		}
+		
+		public static void minMin(int a[]) {System.out.println();
+		   System.out.println("----------------------");
+		   System.out.println("以上20位最小的数:");
+		   int min_number = a[0];
+		   for (int k = 1; k < a.length; k++) {
+			
+			if (a[k]<min_number) {
+				min_number=a[k];
+				
+			}
+			
+		}
+		System.out.println(min_number);
+			
+		}
+		
+		
 	}
 
 
