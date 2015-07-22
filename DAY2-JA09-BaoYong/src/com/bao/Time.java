@@ -18,16 +18,19 @@ public class Time {
 	  sc = new Scanner(System.in); 
 	  int index = sc.nextInt();
 
-	  int c = index%100;
-	  int b = ((index-c)%10000)/100;
-	  int a = index/10000;
+	  int c = index%60;
+	  int b = index%3600/60;
+	  int a = index/3600;
 	  buChong(a);
 	  System.out.print(":");
 	  buChong(b);
 	  System.out.print(":");
 	  buChong(c);
   }
-  
+  public void paiXu(int q) {
+	  
+	
+}
   public static void buChong(int x) {//用于补全成为二位数
 	  if (x<10) {
 		  System.out.print("0"+x);

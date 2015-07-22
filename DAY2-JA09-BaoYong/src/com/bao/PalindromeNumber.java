@@ -20,8 +20,6 @@ public class PalindromeNumber {
    public static void number() {
 	   sc = new Scanner(System.in); 
        
-//       String number = sc.nextLine();
-//       System.out.println(number);
     try {
        	int index = sc.nextInt();
      
